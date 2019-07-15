@@ -1,0 +1,7 @@
+.headerArea{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: darkturquoise;
+    height: 10%;
+}

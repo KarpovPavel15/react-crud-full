@@ -1,5 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import './style.css'
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import {render} from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class App extends React.Component {
+    render() {
+        return (
+            <div className = "app">
+                <Header/>
+                <Content/>
+                <Footer/>
+            </div>
+        );
+    }
+
+}
+render(<App />, document.getElementById('root'));

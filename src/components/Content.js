@@ -41,16 +41,16 @@ export default class Content extends React.Component {
         this.refs.formInput.reset();
         this.refs.name.focus();
     };
-    // editAction=(i)=>{
-    //     let twits=this.state.listOfTwits[i];
-    //     this.refs.name=twits.name;
-    //     this.refs.twit=twits.twit;
-    //     this.setState({
-    //         act:1,
-    //         index:i
-    //     });
-    //     this.refs.name.focus();
-    // };
+    editAction=(i)=>{
+        let twits=this.state.listOfTwits[i];
+        this.refs.name.value=twits.name;
+        this.refs.twit.value=twits.twit;
+        this.setState({
+            act:1,
+            index:i
+        });
+        this.refs.name.focus();
+    };
     removeAction=(i)=>{
         let listOfTwits=this.state.listOfTwits;
         listOfTwits.splice(i,1);

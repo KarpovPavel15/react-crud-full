@@ -1,7 +1,11 @@
 .headerArea{
     display: flex;
     width: 100%;
-    justify-content: center;
-    background-color: darkturquoise;
+    justify-content: space-between;
+    background: url(../../image/1234.jpg);
     height: 10%;
+}
+.signInForm{
+    display: flex;
+    flex-direction: column;
 }

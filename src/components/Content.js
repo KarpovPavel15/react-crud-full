@@ -33,7 +33,6 @@ export default class Content extends React.Component {
             listOfTwits[index].twit=twit;
         }
 
-
         this.setState({
             listOfTwits:listOfTwits,
             act:0

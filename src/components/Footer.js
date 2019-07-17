@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer className="footerArea">
-                {this.state.title}
+                <h2 className="footerText">{this.state.title}</h2>
             </footer>
         );
     }

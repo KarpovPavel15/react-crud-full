@@ -6,7 +6,9 @@ export default class Content extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            listOfTwits:[]
+            listOfTwits:[],
+            act:0,
+            index:''
         }
     }
 
@@ -20,17 +22,45 @@ export default class Content extends React.Component {
 
         let name=this.refs.name.value;
         let twit=this.refs.twit.value;
+        if(this.state.act===0){
+            let twits={
+                name,twit
+            };
+            listOfTwits.push(twits);
+        }else{
+            let index=this.state.index;
+            listOfTwits[index].name=name;
+            listOfTwits[index].twit=twit;
+        }
 
-        let twits={
-            name,twit
-        };
-        listOfTwits.push(twits);
+
+        this.setState({
+            listOfTwits:listOfTwits,
+            act:0
+        });
+        this.refs.formInput.reset();
+        this.refs.name.focus();
+    };
+    // editAction=(i)=>{
+    //     let twits=this.state.listOfTwits[i];
+    //     this.refs.name=twits.name;
+    //     this.refs.twit=twits.twit;
+    //     this.setState({
+    //         act:1,
+    //         index:i
+    //     });
+    //     this.refs.name.focus();
+    // };
+    removeAction=(i)=>{
+        let listOfTwits=this.state.listOfTwits;
+        listOfTwits.splice(i,1);
         this.setState({
             listOfTwits:listOfTwits
         });
         this.refs.formInput.reset();
         this.refs.name.focus();
     };
+
 
     render() {
         let listOfTwits=this.state.listOfTwits;

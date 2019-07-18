@@ -1,19 +1,13 @@
-"use strict";
 import React from 'react'
-import '../css/component-css/footer.css'
+import './footer.css'
 
-export default class Footer extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={
-            title:"Footer twitter"
-        }
-    }
-    render() {
+export const Footer =()=>{
         return (
             <footer className="footerArea">
-                <h2 className="footerText">{this.state.title}</h2>
+                <h2 className="footerArea-Text">Footer</h2>
             </footer>
-        );
-    }
-}
+        )
+};
+//TODO in functional component
+//TODO make json file with string constants
+

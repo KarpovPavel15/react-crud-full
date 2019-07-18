@@ -1,25 +1,13 @@
-"use strict";
 import React from 'react'
-import header from '../css/component-css/header.css'
+import header from './header.css'
+import FormForSignIn from "./FormForSignIn";
 
-export default class Header extends React.Component {
-    constructor(props){
-        super(props);
-        this.state={
-            listOfUsers:[]
-        }
-    }
-    render() {
+export const Header =()=>{
         return (
             <header className="headerArea">
-                <div><img src="../image/123.png"/></div>
+                <div><img src="../image/headerLogo.png"/></div>
                 <h2>CRUD</h2>
-                <form className="signInForm">
-                    <input type="text" ref="loginField" placeholder="Login"/>
-                    <input type="text" ref="passwordField" placeholder="Password"/>
-                    <button>Войти</button>
-                </form>
+                <FormForSignIn/>
             </header>
         );
-    }
-}
+};

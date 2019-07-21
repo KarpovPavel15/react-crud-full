@@ -1,7 +1,7 @@
 "use strict";
-import {Header} from "./Header";
-import Content from "./Content";
-import {Footer} from "./Footer";
+import {Header} from "./HeaderComponent/Header";
+import Content from "./ContentComponent/Content";
+import {Footer} from "./FooterComponent/Footer";
 import React from 'react';
 
 export default class App extends React.Component {

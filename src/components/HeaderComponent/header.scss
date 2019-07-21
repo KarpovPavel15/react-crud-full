@@ -1,0 +1,11 @@
+.headerArea{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: url(../../image/headerBackground.jpg);
+  height: 10%;
+}
+.headerArea_signInForm{
+  display: flex;
+  flex-direction: column;
+}

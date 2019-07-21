@@ -4,7 +4,7 @@ import FormForSignIn from "../FormForSignIn";
 
 export const Header =()=>{
         let data=require("../../listOfTwits.json");
-        let variable=data.titleHeader;
+        let variable=data.en.titleHeader;
         return (
             <header className="headerArea">
                 <div><img src="../../image/headerLogo.png"/></div>

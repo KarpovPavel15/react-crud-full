@@ -1,7 +1,6 @@
 import React from 'react'
 import './content.scss'
 //TODO  twit must like/unlike with scss animations
-//TODO  components podhod
 //TODO  replace list of twits, and input form to another component(use localStorage
 
 export default class Content extends React.Component {

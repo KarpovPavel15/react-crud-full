@@ -1,7 +1,7 @@
 import React from 'react'
 import './content.scss'
 //TODO  twit must like/unlike with scss animations
-//TODO  replace list of twits, and input form to another component(use localStorage
+//TODO  replace list of twits, and input form to another component(use localStorage)
 
 export default class Content extends React.Component {
     state={
@@ -66,26 +66,26 @@ export default class Content extends React.Component {
     render() {
         let listOfTwits=this.state.listOfTwits;
         return (
-            <main className="contentArea">
-                <div className="contentArea_profile">
+            <main className="content-area">
+                <div className="content-area_profile">
                     Profile
                 </div>
-                <div className="contentArea_twits">
-                    <div className="contentArea_twits_divForForm">
-                        <form ref="formInput" className="contentArea_twits_divForForm_formArea">
-                            <input type="text" className="formField" placeholder="Input your Name" ref="name"/>
-                            <input type="text" className="formField" placeholder="Input your twit" ref="twit"/>
-                            <button onClick={(event =>this.actionSubmit(event) )} className="twitButton">create</button>
+                <div className="content-area_twits">
+                    <div className="content-area_twits_input-form__wrapper">
+                        <form ref="formInput" className="content-area_twits_input-form__wrapper_form-area">
+                            <input type="text" className="form-field" placeholder="Input your Name" ref="name"/>
+                            <input type="text" className="form-field" placeholder="Input your twit" ref="twit"/>
+                            <button onClick={(event =>this.actionSubmit(event) )} className="twit-button">create</button>
                         </form>
                     {/*<FormForSendTwit/>*/}
                     </div>
-                    <div className="contentArea_twits_twitsListArea">
+                    <div className="content-area_twits_twits-list-area">
                             {listOfTwits.map((twits,index)=>
                                 <li>
                                     {twits.nameOfUser},
                                     {twits.twitOfUser}
-                                    <button onClick={() => this.removeAction(index)} className="myButton">delete</button>
-                                    <button onClick={() => this.editAction(index)} className="myButton">edit</button>
+                                    <button onClick={() => this.removeAction(index)} className="my-button">delete</button>
+                                    <button onClick={() => this.editAction(index)} className="my-button">edit</button>
                                 </li>
                             )}
                     </div>

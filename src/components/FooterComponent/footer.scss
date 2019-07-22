@@ -1,9 +1,10 @@
-.footerArea{
+.footer-area{
   display: flex;
   height: 10%;
   background-color: black;
   justify-content: center;
-}
-.footerArea_Text{
-  color: azure;
+
+  &_text {
+    color: azure;
+  }
 }

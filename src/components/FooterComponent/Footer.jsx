@@ -5,8 +5,8 @@ export const Footer =()=>{
     let data=require("../../listOfTwits");
     let variable=data.en.titleFooter;
         return (
-            <footer className="footerArea">
-                <h2 className="footerArea_Text">{variable}</h2>
+            <footer className="footer-area">
+                <h2 className="footer-area_text">{variable}</h2>
             </footer>
         )
 };

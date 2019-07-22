@@ -3,10 +3,9 @@
   width: 100%;
   justify-content: space-between;
   background: url(../../image/headerBackground.jpg);
-  height: 10%;
-
-  &_sign-in-form {
+  height: 10%; }
+  .header-area_sign-in-form {
     display: flex;
-    flex-direction: column;
-  }
-}
+    flex-direction: column; }
+
+/*# sourceMappingURL=header.css.map */

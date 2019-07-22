@@ -1,38 +1,41 @@
-.contentArea{
+.content-area {
   display: flex;
   width: 100%;
   background-color: azure;
   height: 80%;
-}
-.contentArea_profile{
-  display: flex;
-  width: 30%;
-  justify-content: center;
-  outline: 2px solid #000;
-  height: 50%;
+    &_profile {
+      display: flex;
+      width: 30%;
+      justify-content: center;
+      outline: 2px solid #000;
+      height: 50%;
 
-}
-.contentArea_twits{
-  display: flex;
-  width: 70%;
-  flex-direction: column;
-  outline: 2px solid #000;
-}
-.contentArea_twits_divForForm{
-  height: 10%;
-}
-.contentArea_twits_twitsListArea{
-  height: 90%;
-  overflow: scroll;
+    }
+    &_twits {
+      display: flex;
+      width: 70%;
+      flex-direction: column;
+      outline: 2px solid #000;
 
-}
-.contentArea_twits_divForForm_formArea{
-  height: 40%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
+
+      &_input-form__wrapper{
+        height: 10%;
+        &_form-area {
+          height: 40%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 2%;
+          padding-bottom: 2%;
+        }
+      }
+
+      &_twits-list-area {
+        height: 90%;
+        overflow-y: scroll;
+
+      }
+    }
 }
 li{
   display: flex;
